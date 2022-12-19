@@ -69,6 +69,9 @@ Offsets::Offsets()
         case 0xded67699:
             this->bgeVersion = Version_Uplay;
             break;
+        case 0xfb6ddd20:
+            this->bgeVersion = Version_Polish;
+            break;
         default:
             cout << "Unsupported BGE version! Please share your BGE.exe with me and have some patience :)" << endl;
             FatalError();
@@ -111,6 +114,22 @@ Offsets::Offsets()
             this->offsets[OFFSET_CAMERA_POSITION] = (void *) 0x00B92564;
             this->offsets[OFFSET_PLAYER_POSITION] = (void *) 0x00B91BD4;
             this->offsets[OFFSET_CAMERA_STRUCT_COPY_FUNCTION] = (void *) 0x00406000;
+            break;
+        case Version_Polish:
+            this->offsets[OFFSET_D3DCREATE] = (void *) 0x00402E30;
+            this->offsets[OFFSET_IDIRECT3D9] = (void *) 0x00B929E0;
+            this->offsets[OFFSET_DINPUT_COOPERATIVELEVEL] = (void *) 0x004232AF;
+            this->offsets[OFFSET_DINPUTDEVICE_MOUSE] = (void *) 0x00B819D8;
+            this->offsets[OFFSET_DINPUTDEVICE_KEYBOARD] = (void *) 0x00B819C8;
+            this->offsets[OFFSET_WINDOW_HANDLE] = (void *) 0x00D1A600;
+            this->offsets[OFFSET_WINDOW_X] = (void *) 0x00402321;
+            this->offsets[OFFSET_WINDOW_Y] = (void *) 0x00402329;
+            this->offsets[OFFSET_VIEWPORT_RESOLUTION_X] = (void *) 0x00B92B68;
+            this->offsets[OFFSET_VIEWPORT_RESOLUTION_Y] = (void *) 0x00B92B6C;
+            this->offsets[OFFSET_DEBUG_CONSOLE_DISABLED] = (void *) 0x00B929D8;
+            this->offsets[OFFSET_CAMERA_POSITION] = (void *) 0xB830B4;
+            this->offsets[OFFSET_PLAYER_POSITION] = (void *) 0xB81054;
+            this->offsets[OFFSET_CAMERA_STRUCT_COPY_FUNCTION] = (void *) 0x45F2F0;
             break;
         case Version_Demo:
             this->offsets[OFFSET_D3DCREATE] = (void *) 0x004A0F30;
