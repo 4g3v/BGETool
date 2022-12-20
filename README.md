@@ -8,6 +8,7 @@ I'll greatly appreciate any feedback or screenshots of findings you'll make with
 * GOG version 2.1.0.9
 * Steam version (Signature timestamp: 09/27/2019 10:55:37)
 * Uplay version (Signature timestamp: 09/27/2019 07:35:53)
+* Polish version
 * [Demo](https://www.4players.de/4players.php/download_info/Downloads/download/5521/Beyond_Good__Evil/Demo.html)
 
 If there's a PC version that's not yet supported, contact me on Discord or send me an email and I'll see what I can do.

@@ -20,6 +20,7 @@
 #include <algorithm>
 #include <detours.h>
 #include <d3d9.h>
+#include <string>
 #include "Structures.h"
 #include "Offsets.h"
 #include "mem.h"

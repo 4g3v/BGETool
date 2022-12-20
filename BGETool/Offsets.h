@@ -30,7 +30,8 @@ enum BGEVersion
     Version_GOG_2109,
     Version_Steam_Steamless,
     Version_Demo,
-    Version_Uplay
+    Version_Uplay,
+    Version_Polish
 };
 
 enum BGEOffset

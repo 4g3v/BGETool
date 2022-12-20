@@ -38,6 +38,7 @@ char *__fastcall HookedCameraCopy(char *pThis)
         switch (offsets_->bgeVersion)
         {
             case Version_GOG_2109:
+            case Version_Polish:
             {
                 pOriginalCameraCopy(pThis);
 
